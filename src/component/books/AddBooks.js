@@ -25,7 +25,7 @@ const AddBooks = () => {
       <div className="form-inputs">
         <input
           type="text"
-          placeholder="Add New Book"
+          placeholder="Book title"
           onChange={(e) => setTitle(e.target.value)}
           value={title}
         />
