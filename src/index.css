@@ -1,3 +1,260 @@
 body {
   background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(230, 224, 224);
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.header:hover {
+  border: 1px solid #0290ff;
+}
+
+.header h2 {
+  color: #0290ff;
+  font-size: 1.85rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav span {
+  color: #0290ff;
+  font-size: 1.2rem;
+  margin: 0 0.7rem;
+}
+
+.nav span:hover {
+  color: #0d61a1;
+}
+
+.books {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-shadow: 5px 10px #f0ecec;
+}
+
+.book-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(226, 221, 221);
+  padding: 1rem;
+}
+
+.items h3 {
+  font-size: 1.2rem;
+  color: #888;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.items h2 {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  border: none;
+  outline: none;
+  background: none;
+  color: #0290ff;
+  font-size: 1rem;
+  margin: 0 0.6rem 0 0;
+  cursor: pointer;
+}
+
+.percent {
+  display: flex;
+  align-items: center;
+}
+
+.meter {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #0290ff;
+  margin-right: 0.3rem;
+}
+
+.percent h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.percentage {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.completed {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.form {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.form h2 {
+  color: #888;
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.form-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-inputs input {
+  width: 38%;
+  margin: 0 0.5rem;
+  height: 1.3rem;
+  border: 1px solid #888;
+  color: black;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.form-inputs button {
+  background: #0290ff;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 15%;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+
+.chapter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chapter h4 {
+  color: #888;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.chapter h3 {
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-top: 0.2rem;
+}
+
+.chapter button {
+  background: #0290ff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 575px) {
+  .header h2 {
+    font-size: 0.8rem;
+  }
+
+  .nav span {
+    font-size: 0.7rem;
+    margin: 0 0.5rem;
+  }
+
+  .books {
+    width: 95%;
+    margin: 1rem auto;
+  }
+
+  .book-item {
+    padding: 0.3rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .items h3 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .items h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .meter {
+    font-size: 3rem;
+  }
+
+  .percentage {
+    font-size: 0.8rem;
+  }
+
+  .completed {
+    font-size: 0.6rem;
+  }
+
+  .form {
+    width: 95%;
+    padding: 0.5rem;
+  }
+
+  .form h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-inputs input {
+    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .form-inputs button {
+    width: 50%;
+    font-size: 1.3rem;
+  }
 }

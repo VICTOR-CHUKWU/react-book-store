@@ -20,21 +20,23 @@ const AddBooks = () => {
     setCategory('');
   };
   return (
-    <form onSubmit={submitBookToStore}>
+    <form onSubmit={submitBookToStore} className="form">
       <h2>Add new Books</h2>
-      <input
-        type="text"
-        placeholder="book title"
-        onChange={(e) => setTitle(e.target.value)}
-        value={title}
-      />
-      <input
-        type="text"
-        placeholder="category"
-        onChange={(e) => setCategory(e.target.value)}
-        value={category}
-      />
-      <button type="submit">submit</button>
+      <div className="form-inputs">
+        <input
+          type="text"
+          placeholder="book title"
+          onChange={(e) => setTitle(e.target.value)}
+          value={title}
+        />
+        <input
+          type="text"
+          placeholder="category"
+          onChange={(e) => setCategory(e.target.value)}
+          value={category}
+        />
+        <button type="submit">submit</button>
+      </div>
     </form>
   );
 };
