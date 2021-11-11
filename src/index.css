@@ -1,16 +1,23 @@
 body {
-  background: #fff;
+  background: #fafafa;
   margin: 0;
   padding: 0;
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom: 1px solid rgb(230, 224, 224);
+  border-bottom: 1px solid rgb(212, 208, 208);
   margin-bottom: 2rem;
   width: 100%;
+  background: #fff;
+}
+
+.header-inner {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header:hover {
@@ -32,7 +39,7 @@ body {
 }
 
 .nav span {
-  color: #0290ff;
+  color: #888;
   font-size: 1.2rem;
   margin: 0 0.7rem;
 }
@@ -41,11 +48,27 @@ body {
   color: #0d61a1;
 }
 
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-head {
+  color: #0d61a1;
+  font-size: 1.4rem;
+}
+
 .books {
-  width: 90%;
-  margin: 2rem auto;
+  width: 85%;
+  margin: 3rem auto;
   padding: 1rem;
-  box-shadow: 5px 10px #f0ecec;
+  background: #fafafa;
+  box-shadow: 5px 10px #e0dcdc;
 }
 
 .book-item {
@@ -55,6 +78,7 @@ body {
   margin-bottom: 1rem;
   border: 1px solid rgb(226, 221, 221);
   padding: 1rem;
+  background: #fff;
 }
 
 .items h3 {
@@ -68,6 +92,15 @@ body {
   font-size: 1.8rem;
   color: black;
   font-weight: 700;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.items p {
+  font-size: 1rem;
+  color: #0290ff;
+  font-weight: 400;
+  margin-top: 0;
 }
 
 .buttons {
@@ -90,11 +123,24 @@ body {
   align-items: center;
 }
 
+.hr {
+  background: rgb(211, 208, 208);
+  width: 1px;
+  height: 5rem;
+}
+
+.hl {
+  background: rgb(211, 208, 208);
+  width: 1px;
+  height: 1.4rem;
+}
+
 .meter {
   font-size: 5rem;
   font-weight: 700;
   color: #0290ff;
   margin-right: 0.3rem;
+  border: 1px solid #0290ff;
 }
 
 .percent h3 {
@@ -116,9 +162,10 @@ body {
 }
 
 .form {
-  width: 90%;
-  margin: 0 auto;
+  width: 85%;
+  margin: 1rem auto;
   padding: 1rem;
+  border-top: 1px solid rgb(185, 183, 183);
 }
 
 .form h2 {
@@ -136,17 +183,18 @@ body {
 .form-inputs input {
   width: 38%;
   margin: 0 0.5rem;
-  height: 1.3rem;
-  border: 1px solid #888;
+  height: 2.8rem;
+  border: 1px solid rgb(202, 198, 198);
   color: black;
   padding: 0.5rem;
   font-size: 0.9rem;
   outline: none;
+  background: #fff;
 }
 
 .form-inputs button {
   background: #0290ff;
-  height: 2.5rem;
+  height: 3.8rem;
   line-height: 2.5rem;
   width: 15%;
   font-size: 1rem;
@@ -155,6 +203,12 @@ body {
   outline: none;
   cursor: pointer;
   color: white;
+  text-transform: uppercase;
+}
+
+::placeholder {
+  color: #888;
+  font-size: 1.3rem;
 }
 
 .chapter {
@@ -197,6 +251,10 @@ body {
   .nav span {
     font-size: 0.7rem;
     margin: 0 0.5rem;
+  }
+
+  .hr {
+    display: none;
   }
 
   .books {

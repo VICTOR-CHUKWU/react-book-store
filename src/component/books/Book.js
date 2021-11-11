@@ -21,9 +21,12 @@ const Book = () => {
               <div className="items">
                 <h3>{category}</h3>
                 <h2>{title}</h2>
+                <p>Author</p>
                 <div className="buttons">
                   <button type="button">comments</button>
-                  <button type="button" onClick={() => dispatch(removeBook(id))}>Remove Book</button>
+                  <span className="hl" />
+                  <button type="button" onClick={() => dispatch(removeBook(id))}>Remove</button>
+                  <span className="hl" />
                   <button type="button">Edit</button>
                 </div>
               </div>
@@ -34,6 +37,7 @@ const Book = () => {
                   <span className="completed">completed</span>
                 </h3>
               </div>
+              <div className="hr" />
               <div className="chapter">
                 <h4>Current Chapter</h4>
                 <h3>chapter one: &quot; A Lesson Learned &quot;</h3>

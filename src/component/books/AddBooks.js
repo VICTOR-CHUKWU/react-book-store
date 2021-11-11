@@ -25,7 +25,7 @@ const AddBooks = () => {
       <div className="form-inputs">
         <input
           type="text"
-          placeholder="book title"
+          placeholder="Add New Book"
           onChange={(e) => setTitle(e.target.value)}
           value={title}
         />
@@ -35,7 +35,7 @@ const AddBooks = () => {
           onChange={(e) => setCategory(e.target.value)}
           value={category}
         />
-        <button type="submit">submit</button>
+        <button type="submit">add book</button>
       </div>
     </form>
   );
